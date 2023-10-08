@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0635AE232AD133E000BFBB00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635AE222AD133E000BFBB00 /* AppDelegate.m */; };
-		0635AE262AD133E000BFBB00 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635AE252AD133E000BFBB00 /* SceneDelegate.m */; };
 		0635AE292AD133E000BFBB00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635AE282AD133E000BFBB00 /* ViewController.m */; };
 		0635AE2C2AD133E000BFBB00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0635AE2A2AD133E000BFBB00 /* Main.storyboard */; };
 		0635AE2E2AD133E100BFBB00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0635AE2D2AD133E100BFBB00 /* Assets.xcassets */; };
@@ -17,6 +16,14 @@
 		0635AE3E2AD133E100BFBB00 /* onetoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635AE3D2AD133E100BFBB00 /* onetoxTests.m */; };
 		0635AE482AD133E100BFBB00 /* onetoxUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635AE472AD133E100BFBB00 /* onetoxUITests.m */; };
 		0635AE4A2AD133E100BFBB00 /* onetoxUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635AE492AD133E100BFBB00 /* onetoxUITestsLaunchTests.m */; };
+		0635AE772AD18D5200BFBB00 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635AE762AD18D5200BFBB00 /* MainTabBarViewController.m */; };
+		0635AE7A2AD18D5C00BFBB00 /* OTXRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635AE792AD18D5C00BFBB00 /* OTXRootViewController.m */; };
+		0635AE7D2AD18D6300BFBB00 /* OTXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635AE7C2AD18D6300BFBB00 /* OTXHomeViewController.m */; };
+		0635AE802AD23A4400BFBB00 /* tab_home_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = 0635AE7F2AD23A4400BFBB00 /* tab_home_animate.json */; };
+		0635AE822AD23A6D00BFBB00 /* green_lottie_tab_home.json in Resources */ = {isa = PBXBuildFile; fileRef = 0635AE812AD23A6D00BFBB00 /* green_lottie_tab_home.json */; };
+		3C40408BE7F134692F4D6B0D /* libPods-onetox-onetoxUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D504448EDE86A28E08C6A816 /* libPods-onetox-onetoxUITests.a */; };
+		C61999EEE5EE13EC44D95228 /* libPods-onetoxTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE31F2EF50750BFC017D16C1 /* libPods-onetoxTests.a */; };
+		D34CA90888960C8D07E9D964 /* libPods-onetox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B43F054A23BBBB2695495049 /* libPods-onetox.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +47,6 @@
 		0635AE1E2AD133E000BFBB00 /* onetox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onetox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0635AE212AD133E000BFBB00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0635AE222AD133E000BFBB00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0635AE242AD133E000BFBB00 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		0635AE252AD133E000BFBB00 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		0635AE272AD133E000BFBB00 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0635AE282AD133E000BFBB00 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0635AE2B2AD133E000BFBB00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +59,23 @@
 		0635AE432AD133E100BFBB00 /* onetoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = onetoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0635AE472AD133E100BFBB00 /* onetoxUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = onetoxUITests.m; sourceTree = "<group>"; };
 		0635AE492AD133E100BFBB00 /* onetoxUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = onetoxUITestsLaunchTests.m; sourceTree = "<group>"; };
+		0635AE752AD18D5200BFBB00 /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
+		0635AE762AD18D5200BFBB00 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
+		0635AE782AD18D5C00BFBB00 /* OTXRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTXRootViewController.h; sourceTree = "<group>"; };
+		0635AE792AD18D5C00BFBB00 /* OTXRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTXRootViewController.m; sourceTree = "<group>"; };
+		0635AE7B2AD18D6300BFBB00 /* OTXHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTXHomeViewController.h; sourceTree = "<group>"; };
+		0635AE7C2AD18D6300BFBB00 /* OTXHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTXHomeViewController.m; sourceTree = "<group>"; };
+		0635AE7F2AD23A4400BFBB00 /* tab_home_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_home_animate.json; sourceTree = "<group>"; };
+		0635AE812AD23A6D00BFBB00 /* green_lottie_tab_home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = green_lottie_tab_home.json; sourceTree = "<group>"; };
+		3C8BF71D67DB0ABDDF9E7F36 /* Pods-onetox-onetoxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onetox-onetoxUITests.release.xcconfig"; path = "Target Support Files/Pods-onetox-onetoxUITests/Pods-onetox-onetoxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F45DE333F59EF433C2C4A60 /* Pods-onetoxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onetoxTests.debug.xcconfig"; path = "Target Support Files/Pods-onetoxTests/Pods-onetoxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		940C937A48BFA33A48CFB8B5 /* Pods-onetox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onetox.debug.xcconfig"; path = "Target Support Files/Pods-onetox/Pods-onetox.debug.xcconfig"; sourceTree = "<group>"; };
+		A828F2C725C492E203CCDE27 /* Pods-onetoxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onetoxTests.release.xcconfig"; path = "Target Support Files/Pods-onetoxTests/Pods-onetoxTests.release.xcconfig"; sourceTree = "<group>"; };
+		B43F054A23BBBB2695495049 /* libPods-onetox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-onetox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E9D790F9C378AB6DB52B10 /* Pods-onetox-onetoxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onetox-onetoxUITests.debug.xcconfig"; path = "Target Support Files/Pods-onetox-onetoxUITests/Pods-onetox-onetoxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D504448EDE86A28E08C6A816 /* libPods-onetox-onetoxUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-onetox-onetoxUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDEC614AFC9A8A4CEB71287E /* Pods-onetox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onetox.release.xcconfig"; path = "Target Support Files/Pods-onetox/Pods-onetox.release.xcconfig"; sourceTree = "<group>"; };
+		EE31F2EF50750BFC017D16C1 /* libPods-onetoxTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-onetoxTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34CA90888960C8D07E9D964 /* libPods-onetox.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61999EEE5EE13EC44D95228 /* libPods-onetoxTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C40408BE7F134692F4D6B0D /* libPods-onetox-onetoxUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +113,8 @@
 				0635AE3C2AD133E100BFBB00 /* onetoxTests */,
 				0635AE462AD133E100BFBB00 /* onetoxUITests */,
 				0635AE1F2AD133E000BFBB00 /* Products */,
+				1605F8C8249FF3833E5A90B1 /* Pods */,
+				B78B1F2148510AA806471534 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,10 +131,10 @@
 		0635AE202AD133E000BFBB00 /* onetox */ = {
 			isa = PBXGroup;
 			children = (
+				0635AE7E2AD18E5B00BFBB00 /* Resource */,
+				0635AE722AD18D2B00BFBB00 /* Biz */,
 				0635AE212AD133E000BFBB00 /* AppDelegate.h */,
 				0635AE222AD133E000BFBB00 /* AppDelegate.m */,
-				0635AE242AD133E000BFBB00 /* SceneDelegate.h */,
-				0635AE252AD133E000BFBB00 /* SceneDelegate.m */,
 				0635AE272AD133E000BFBB00 /* ViewController.h */,
 				0635AE282AD133E000BFBB00 /* ViewController.m */,
 				0635AE2A2AD133E000BFBB00 /* Main.storyboard */,
@@ -136,6 +163,67 @@
 			path = onetoxUITests;
 			sourceTree = "<group>";
 		};
+		0635AE722AD18D2B00BFBB00 /* Biz */ = {
+			isa = PBXGroup;
+			children = (
+				0635AE742AD18D3C00BFBB00 /* TabBar */,
+				0635AE732AD18D3400BFBB00 /* Home */,
+			);
+			path = Biz;
+			sourceTree = "<group>";
+		};
+		0635AE732AD18D3400BFBB00 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0635AE7B2AD18D6300BFBB00 /* OTXHomeViewController.h */,
+				0635AE7C2AD18D6300BFBB00 /* OTXHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0635AE742AD18D3C00BFBB00 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0635AE782AD18D5C00BFBB00 /* OTXRootViewController.h */,
+				0635AE792AD18D5C00BFBB00 /* OTXRootViewController.m */,
+				0635AE752AD18D5200BFBB00 /* MainTabBarViewController.h */,
+				0635AE762AD18D5200BFBB00 /* MainTabBarViewController.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		0635AE7E2AD18E5B00BFBB00 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0635AE812AD23A6D00BFBB00 /* green_lottie_tab_home.json */,
+				0635AE7F2AD23A4400BFBB00 /* tab_home_animate.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1605F8C8249FF3833E5A90B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				940C937A48BFA33A48CFB8B5 /* Pods-onetox.debug.xcconfig */,
+				EDEC614AFC9A8A4CEB71287E /* Pods-onetox.release.xcconfig */,
+				C7E9D790F9C378AB6DB52B10 /* Pods-onetox-onetoxUITests.debug.xcconfig */,
+				3C8BF71D67DB0ABDDF9E7F36 /* Pods-onetox-onetoxUITests.release.xcconfig */,
+				7F45DE333F59EF433C2C4A60 /* Pods-onetoxTests.debug.xcconfig */,
+				A828F2C725C492E203CCDE27 /* Pods-onetoxTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B78B1F2148510AA806471534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B43F054A23BBBB2695495049 /* libPods-onetox.a */,
+				D504448EDE86A28E08C6A816 /* libPods-onetox-onetoxUITests.a */,
+				EE31F2EF50750BFC017D16C1 /* libPods-onetoxTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +231,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0635AE4D2AD133E100BFBB00 /* Build configuration list for PBXNativeTarget "onetox" */;
 			buildPhases = (
+				54858D970B9AD51B68CE8897 /* [CP] Check Pods Manifest.lock */,
 				0635AE1A2AD133E000BFBB00 /* Sources */,
 				0635AE1B2AD133E000BFBB00 /* Frameworks */,
 				0635AE1C2AD133E000BFBB00 /* Resources */,
@@ -160,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0635AE502AD133E100BFBB00 /* Build configuration list for PBXNativeTarget "onetoxTests" */;
 			buildPhases = (
+				5D33C6D4C5C205B36872DA2D /* [CP] Check Pods Manifest.lock */,
 				0635AE352AD133E100BFBB00 /* Sources */,
 				0635AE362AD133E100BFBB00 /* Frameworks */,
 				0635AE372AD133E100BFBB00 /* Resources */,
@@ -178,6 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0635AE532AD133E100BFBB00 /* Build configuration list for PBXNativeTarget "onetoxUITests" */;
 			buildPhases = (
+				C438F8C2C96111C1F9D67D73 /* [CP] Check Pods Manifest.lock */,
 				0635AE3F2AD133E100BFBB00 /* Sources */,
 				0635AE402AD133E100BFBB00 /* Frameworks */,
 				0635AE412AD133E100BFBB00 /* Resources */,
@@ -241,7 +332,9 @@
 			files = (
 				0635AE312AD133E100BFBB00 /* LaunchScreen.storyboard in Resources */,
 				0635AE2E2AD133E100BFBB00 /* Assets.xcassets in Resources */,
+				0635AE802AD23A4400BFBB00 /* tab_home_animate.json in Resources */,
 				0635AE2C2AD133E000BFBB00 /* Main.storyboard in Resources */,
+				0635AE822AD23A6D00BFBB00 /* green_lottie_tab_home.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,15 +354,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		54858D970B9AD51B68CE8897 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-onetox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D33C6D4C5C205B36872DA2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-onetoxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C438F8C2C96111C1F9D67D73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-onetox-onetoxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0635AE1A2AD133E000BFBB00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0635AE292AD133E000BFBB00 /* ViewController.m in Sources */,
+				0635AE7D2AD18D6300BFBB00 /* OTXHomeViewController.m in Sources */,
+				0635AE772AD18D5200BFBB00 /* MainTabBarViewController.m in Sources */,
+				0635AE7A2AD18D5C00BFBB00 /* OTXRootViewController.m in Sources */,
 				0635AE232AD133E000BFBB00 /* AppDelegate.m in Sources */,
 				0635AE342AD133E100BFBB00 /* main.m in Sources */,
-				0635AE262AD133E000BFBB00 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +607,7 @@
 		};
 		0635AE4E2AD133E100BFBB00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 940C937A48BFA33A48CFB8B5 /* Pods-onetox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +621,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,6 +636,7 @@
 		};
 		0635AE4F2AD133E100BFBB00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDEC614AFC9A8A4CEB71287E /* Pods-onetox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -483,6 +650,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,6 +665,7 @@
 		};
 		0635AE512AD133E100BFBB00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F45DE333F59EF433C2C4A60 /* Pods-onetoxTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -515,6 +684,7 @@
 		};
 		0635AE522AD133E100BFBB00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A828F2C725C492E203CCDE27 /* Pods-onetoxTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -533,6 +703,7 @@
 		};
 		0635AE542AD133E100BFBB00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E9D790F9C378AB6DB52B10 /* Pods-onetox-onetoxUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -549,6 +720,7 @@
 		};
 		0635AE552AD133E100BFBB00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C8BF71D67DB0ABDDF9E7F36 /* Pods-onetox-onetoxUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
