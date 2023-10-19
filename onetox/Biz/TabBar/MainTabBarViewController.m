@@ -42,7 +42,7 @@
 
 - (NSArray *)viewControllersForTabBar {
     OTXHomeViewController *firstViewController = [[OTXHomeViewController alloc] init];
-    UIViewController *firstNavigationController = [[CYLBaseNavigationController alloc]
+    UIViewController *firstNavigationController = [[UINavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     [firstViewController cyl_setHideNavigationBarSeparator:YES];
     // [firstViewController cyl_setNavigationBarHidden:YES];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06051E802AE1148B00FC5485 /* HomeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06051E7F2AE1148B00FC5485 /* HomeTestViewController.m */; };
 		0635AE232AD133E000BFBB00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635AE222AD133E000BFBB00 /* AppDelegate.m */; };
 		0635AE292AD133E000BFBB00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635AE282AD133E000BFBB00 /* ViewController.m */; };
 		0635AE2C2AD133E000BFBB00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0635AE2A2AD133E000BFBB00 /* Main.storyboard */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06051E7E2AE1148B00FC5485 /* HomeTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTestViewController.h; sourceTree = "<group>"; };
+		06051E7F2AE1148B00FC5485 /* HomeTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTestViewController.m; sourceTree = "<group>"; };
 		0635AE1E2AD133E000BFBB00 /* onetox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onetox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0635AE212AD133E000BFBB00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0635AE222AD133E000BFBB00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -177,6 +180,8 @@
 			children = (
 				0635AE7B2AD18D6300BFBB00 /* OTXHomeViewController.h */,
 				0635AE7C2AD18D6300BFBB00 /* OTXHomeViewController.m */,
+				06051E7E2AE1148B00FC5485 /* HomeTestViewController.h */,
+				06051E7F2AE1148B00FC5485 /* HomeTestViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -432,6 +437,7 @@
 				0635AE7D2AD18D6300BFBB00 /* OTXHomeViewController.m in Sources */,
 				0635AE772AD18D5200BFBB00 /* MainTabBarViewController.m in Sources */,
 				0635AE7A2AD18D5C00BFBB00 /* OTXRootViewController.m in Sources */,
+				06051E802AE1148B00FC5485 /* HomeTestViewController.m in Sources */,
 				0635AE232AD133E000BFBB00 /* AppDelegate.m in Sources */,
 				0635AE342AD133E100BFBB00 /* main.m in Sources */,
 			);

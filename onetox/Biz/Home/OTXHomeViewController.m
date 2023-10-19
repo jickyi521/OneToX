@@ -6,6 +6,7 @@
 //
 
 #import "OTXHomeViewController.h"
+#import "HomeTestViewController.h"
 
 @interface OTXHomeViewController ()
 
@@ -16,16 +17,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self layoutUI];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)layoutUI{
+    UIButton *clickBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    clickBtn.backgroundColor = [UIColor redColor];
+    clickBtn.center = self.view.center;
+    [clickBtn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:clickBtn];
+    
 }
-*/
+
+-(void)btnClick{
+    HomeTestViewController *testVc = [[HomeTestViewController alloc] init];
+    testVc.hidesBottomBarWhenPushed = NO;
+    
+    [self.navigationController pushViewController:testVc animated:NO];
+    
+}
 
 @end
