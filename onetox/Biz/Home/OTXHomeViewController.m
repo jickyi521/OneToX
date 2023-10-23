@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self layoutUI];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(layoutUI) name:@"INJECTION_BUNDLE_NOTIFICATION" object:nil];
 }
 
 - (void)layoutUI{
@@ -35,6 +37,15 @@
     
     [self.navigationController pushViewController:testVc animated:NO];
     
+}
+
+-(void)injected{
+    NSLog(@"I've been injected: %@", self);
+    NSLog(@"这里调用修改页面布局的代码，如这里调用了viewDidLoad方法");
+    #if DEBUG
+        [self viewDidLoad];
+        [self layoutUI];
+    #endif
 }
 
 @end

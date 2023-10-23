@@ -25,6 +25,13 @@
     OTXRootViewController *rootViewController = [[OTXRootViewController alloc] init];
     [self.window setRootViewController:rootViewController];
     
+    //根据情况做相关设置
+    #if DEBUG
+        //    for iOS开发
+        [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
+
+    #endif
+    
     return YES;
 }
 
