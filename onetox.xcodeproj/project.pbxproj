@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06051E802AE1148B00FC5485 /* HomeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06051E7F2AE1148B00FC5485 /* HomeTestViewController.m */; };
+		0624A5DE2B045C60007DD6AE /* ProProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0624A5DD2B045C60007DD6AE /* ProProgressView.m */; };
 		0635AE232AD133E000BFBB00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635AE222AD133E000BFBB00 /* AppDelegate.m */; };
 		0635AE292AD133E000BFBB00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635AE282AD133E000BFBB00 /* ViewController.m */; };
 		0635AE2C2AD133E000BFBB00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0635AE2A2AD133E000BFBB00 /* Main.storyboard */; };
@@ -47,6 +48,8 @@
 /* Begin PBXFileReference section */
 		06051E7E2AE1148B00FC5485 /* HomeTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTestViewController.h; sourceTree = "<group>"; };
 		06051E7F2AE1148B00FC5485 /* HomeTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTestViewController.m; sourceTree = "<group>"; };
+		0624A5DC2B045C60007DD6AE /* ProProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProProgressView.h; sourceTree = "<group>"; };
+		0624A5DD2B045C60007DD6AE /* ProProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProProgressView.m; sourceTree = "<group>"; };
 		0635AE1E2AD133E000BFBB00 /* onetox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onetox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0635AE212AD133E000BFBB00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0635AE222AD133E000BFBB00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0624A5DB2B045C30007DD6AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0624A5DC2B045C60007DD6AE /* ProProgressView.h */,
+				0624A5DD2B045C60007DD6AE /* ProProgressView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0635AE152AD133E000BFBB00 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +190,7 @@
 		0635AE732AD18D3400BFBB00 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0624A5DB2B045C30007DD6AE /* Views */,
 				0635AE7B2AD18D6300BFBB00 /* OTXHomeViewController.h */,
 				0635AE7C2AD18D6300BFBB00 /* OTXHomeViewController.m */,
 				06051E7E2AE1148B00FC5485 /* HomeTestViewController.h */,
@@ -237,9 +250,11 @@
 			buildConfigurationList = 0635AE4D2AD133E100BFBB00 /* Build configuration list for PBXNativeTarget "onetox" */;
 			buildPhases = (
 				54858D970B9AD51B68CE8897 /* [CP] Check Pods Manifest.lock */,
+				812C186994401D65FEF34710 /* [CP-User] Run Flutter Build onetox_flutter Script */,
 				0635AE1A2AD133E000BFBB00 /* Sources */,
 				0635AE1B2AD133E000BFBB00 /* Frameworks */,
 				0635AE1C2AD133E000BFBB00 /* Resources */,
+				7540426920D0FAD922E95859 /* [CP-User] Embed Flutter Build onetox_flutter Script */,
 			);
 			buildRules = (
 			);
@@ -404,6 +419,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7540426920D0FAD922E95859 /* [CP-User] Embed Flutter Build onetox_flutter Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Embed Flutter Build onetox_flutter Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../onetox_flutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
+		};
+		812C186994401D65FEF34710 /* [CP-User] Run Flutter Build onetox_flutter Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build onetox_flutter Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../onetox_flutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
 		C438F8C2C96111C1F9D67D73 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -438,6 +473,7 @@
 				0635AE772AD18D5200BFBB00 /* MainTabBarViewController.m in Sources */,
 				0635AE7A2AD18D5C00BFBB00 /* OTXRootViewController.m in Sources */,
 				06051E802AE1148B00FC5485 /* HomeTestViewController.m in Sources */,
+				0624A5DE2B045C60007DD6AE /* ProProgressView.m in Sources */,
 				0635AE232AD133E000BFBB00 /* AppDelegate.m in Sources */,
 				0635AE342AD133E100BFBB00 /* main.m in Sources */,
 			);
@@ -532,7 +568,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -593,7 +629,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -627,7 +663,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -656,7 +692,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

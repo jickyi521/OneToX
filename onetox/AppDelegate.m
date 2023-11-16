@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "OTXRootViewController.h"
+#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.flutterEngine = [[FlutterEngine alloc] initWithName:@"my flutter engine"];
+      // Runs the default Dart entrypoint with a default Flutter route.
+      [self.flutterEngine run];
+      // Connects plugins with iOS platform code to this app.
+      [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
     
     // 设置主窗口,并设置根控制器
     self.window = [[UIWindow alloc] init];
