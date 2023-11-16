@@ -11,9 +11,11 @@
 #import "Flutter/FlutterEngine.h"
 #import "AppDelegate.h"
 #import "Flutter/FlutterViewController.h"
+#import "GeneratedPluginRegistrant.h"
 
-@interface OTXHomeViewController ()
+@interface OTXHomeViewController()
 
+@property(strong, nonatomic) FlutterMethodChannel *batteryChannel;
 
 @end
 
@@ -57,13 +59,50 @@
 //    FlutterEngine *flutterEngine =
 //        ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
     
+    
     FlutterEngine *flutterEngine = [[FlutterEngine alloc] init];
     // FlutterDefaultDartEntrypoint is the same as nil, which will run main().
     [flutterEngine runWithEntrypoint:nil
-                        initialRoute:@"/login"];
+                        initialRoute:@"/platform"];
         FlutterViewController *flutterViewController =
             [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
+    
+    
+    __weak __typeof(self) weakSelf = self;
+    FlutterMethodChannel* batteryChannel = [FlutterMethodChannel
+                                             methodChannelWithName:@"samples.flutter.dev/battery"
+                                             binaryMessenger:flutterViewController.binaryMessenger];
+    [batteryChannel setMethodCallHandler:^(FlutterMethodCall* call, FlutterResult result) {
+         // This method is invoked on the UI thread.
+          if ([@"getBatteryLevel" isEqualToString:call.method]) {
+            int batteryLevel = [weakSelf getBatteryLevel];
+
+            if (batteryLevel == -1) {
+              result([FlutterError errorWithCode:@"UNAVAILABLE"
+                                         message:@"Battery level not available."
+                                         details:nil]);
+            } else {
+              result(@(batteryLevel));
+            }
+          } else {
+            result(FlutterMethodNotImplemented);
+          }
+     }];
+
+     [GeneratedPluginRegistrant registerWithRegistry:flutterEngine];
+    
+    
     [self.navigationController pushViewController:flutterViewController animated:NO];
+}
+
+- (int)getBatteryLevel {
+  UIDevice* device = UIDevice.currentDevice;
+  device.batteryMonitoringEnabled = YES;
+  if (device.batteryState == UIDeviceBatteryStateUnknown) {
+    return -1;
+  } else {
+    return (int)(device.batteryLevel * 100);
+  }
 }
 
 -(void)btnClick{
