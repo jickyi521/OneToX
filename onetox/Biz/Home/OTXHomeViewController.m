@@ -72,6 +72,7 @@
     FlutterMethodChannel* batteryChannel = [FlutterMethodChannel
                                              methodChannelWithName:@"samples.flutter.dev/battery"
                                              binaryMessenger:flutterViewController.binaryMessenger];
+    //调用 flutter -> native
     [batteryChannel setMethodCallHandler:^(FlutterMethodCall* call, FlutterResult result) {
          // This method is invoked on the UI thread.
           if ([@"getBatteryLevel" isEqualToString:call.method]) {
@@ -88,6 +89,9 @@
             result(FlutterMethodNotImplemented);
           }
      }];
+    
+    //调用 native -> flutter
+//    [batteryChannel invokeMethod:<#(nonnull NSString *)#> arguments:<#(id _Nullable)#>]
 
      [GeneratedPluginRegistrant registerWithRegistry:flutterEngine];
     
